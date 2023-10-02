@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" /> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css"/>
+    <title>Vashu Kashyap | Portfolio</title>
+</head>
+<body>
+    
+<nav class="bg-[#19a14d] mt-4 border-2 border-gray-100 shadow-lg shadow-black mx-4">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
+      <a class="flex items-center">
+        <img class="" src="images/segment_display.svg" alt="not available"/>
+          <span id="displaytext" class="blink self-center text-4xl font-semibold whitespace-nowrap absolute ml-4 text-yellow-300 off">
+            Vashu Kashyap
+          </span>
+          <img class="hover:cursor-pointer" src="images/decoder.svg" alt="not available" onclick="optionDisplay()"/>
+      </a>
+      <!-- <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+      </button> -->
+      <!-- <img src="./images/battery.svg" class="z-10"/> -->
+      <div class="border-2 border-gray-900 w-2 h-2 absolute rounded-full ml-[20em]"></div>
+      <div class="border-2 border-gray-900 w-[30em] h-1 absolute ml-80 rounded-full "></div>
+      <div class="border-2 border-gray-900 w-2 h-2 absolute rounded-full ml-[49.6em]"></div>
+
+      <div class="block w-auto" id="navbar-default ">
+        <ul class="font-medium text-md flex flex-row gap-4 ">
+            <li class="flex flex-col items-center">
+                <a  class=" block pl-3 pr-4 pr-rounded" onclick="dataChip('welcome')">
+                    <img class="chip ml-2 top-[2rem] absolute cursor-pointer" src="./images/view_data_card.svg" alt="not available" id="welcomeChip">
+                    <img class="mt-10" src="./images/card_slot.svg" alt="not available">
+                </a>
+              </li>
+          <li class="flex flex-col items-center">
+            <a  class="block pl-3 pr-4 pr-rounded" onclick="dataChip('about')" >
+                <img class="chip ml-2 top-[0.4rem] absolute cursor-pointer" src="./images/view_data_card.svg" alt="not available" id="aboutChip">
+                <img class="mt-10" src="./images/card_slot.svg" alt="not available">
+            </a>
+          </li>
+          <li class="flex flex-col items-center">
+            <a class="block pl-3 pr-4 pr-rounded" onclick="dataChip('project')" >
+                <img class="chip ml-2 top-[0.4rem] absolute cursor-pointer" src="./images/view_data_card.svg" alt="not available" id="projectChip">
+                <img class="mt-10" src="./images/card_slot.svg" alt="not available">
+            </a>
+          </li>
+          <li class="flex flex-col items-center">
+            <a  class="block pl-3 pr-4 pr-rounded" onclick="dataChip('contact')" >
+                <img class="chip ml-2 top-[0.4rem] absolute cursor-pointer" src="./images/view_data_card.svg" alt="not available" id="contactChip">
+                <img class="mt-10" src="./images/card_slot.svg" alt="not available">
+            </a>
+          </li>
+          <li class="flex flex-col items-center">
+            <a  class="block pl-3 pr-4 pr-rounded" onclick="dataChip('darkmode')" >
+                <img class="chip ml-2 top-[0.4rem] absolute cursor-pointer" src="./images/view_data_card.svg" alt="not available" id="darkmodeChip">
+                <img class="mt-10" src="./images/card_slot.svg" alt="not available">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section>
+    <div class="flex flex-col items-center w-fit">
+    <img class="ml-8" src="./images/navdisplay.svg" alt="not available"/>
+    <span class="z-10 text-4xl font-bold -mt-[3.5rem] off" id="chipName">Welcome</span>
+    </div>
+    
+    <img class="w-[3rem] absolute left-[2rem] bottom-[2rem]" src="./images/smallbattery.svg" alt="not availabe"/> 
+    <div class="w-12 h-1 absolute z-10 left-[3.8rem] bottom-[6rem] border-2 border-red-700 rounded-full"></div>
+    <div class="w-16 h-1 absolute z-10 left-[2.8rem] bottom-[6.8rem] border-2 border-gray-900 rounded-full"></div>
+    <div class="w-1 h-4 absolute z-10 left-[2.8rem] bottom-[6rem] border-2 border-gray-900 rounded-full"></div>
+    <div class="w-8 h-8 blinkled absolute bg-pink-600 blur-[10px] left-[10.8rem] mt-[3.1rem] z-10" id="led"></div>
+    <button class="w-4 h-4 rounded-full absolute  bottom-[6.1rem] left-[7.4rem] z-[100] cursor-pointer" onclick="shutdown()"></button>
+    <img class="w-[30rem] absolute left-[6rem] bottom-[4.5rem]" src="./images/ready_breadboard.svg" alt="not availabe"/>
+    <img class="w-[4rem] absolute right-[2rem] bottom-[0rem]" src="./images/processor.svg" alt="not availabe"/>
+    <img class="w-[2rem] absolute left-[35.8rem] bottom-[5rem]" src="./images/connector.svg" alt="not availabe"/>
+  </section>
+  <div class="textdiv absolute right-0 p-2 top-40 w-[60vw]" id="welcomeDiv">
+    <p class="text-[3rem] font-bold text-gray-900 off">
+        Hi, I am Vashu Kashyap,
+        <span class="text-[1.2rem] block bg-green-700 pl-2 border-t-2 border-green-800 off">I am an Electronics Engineering Student, who is always excited to learn about new technology</span>
+    </p>
+    <div class="ml-20 text-2xl font-bold mt-10 text-gray-300 off">
+        <sapn class="text-[3rem] text-gray-900 whitespace-normal off">"</sapn>
+        i don't think, i am born with talent,<br>
+        maybe because i haven't found it in me yet, therefore<br>
+        i mostly rely on Hardwork. which make better than most of the people.
+        <sapn class="text-[3rem] text-gray-900 off">"</sapn>    
+    </div>
+  </div>
+  <div class="textdiv hidden absolute right-10 p-2 top-[8rem] w-[60vw]" id="aboutDiv">
+    <h1 class="text-4xl font-bold text-gray-100">
+        <!-- About me<div class="w-16 h-1 border-2 border-gray-100 rounded-full"></div> -->
+        <!-- <span class="text-sm block text-">
+            I am a passionate and hardworking person.
+        </span> -->
+        <span class="ml-20 off">
+            Education <div class="w-16 h-1 ml-[14rem] mt-[-1.5rem] absolute border-2 border-gray-100 rounded-full"></div><br>
+        </span>
+        <div class="text-[1.3rem] ml-40 border-s-2 border-green-900 pl-2 my-2">
+            <span class="text-gray-900 off">Saharanpur, Uttar pradesh</span>
+            <div class="text-[3rem] -mt-[10px] off">
+                ST Mary's Academy
+            </div>
+            <div class="text-[1.5rem] -mt-[10px] text-gray-600 off">
+                passout: 2022
+            </div>
+        </div>
+        <div class="text-[1.3rem] ml-40 border-s-2 border-green-900 pl-2 mt-8">
+            <span class="text-gray-900 off">Ghaziabadh, Uttar pradesh</span>
+            <div class="text-[3rem] -mt-[10px] off">
+                ABES Engineering College
+            </div>
+            <div class="text-[1.7rem] -mt-[5px] -mb-[15px] text-blue-900 off">
+                Electronic and Communication Engineering
+            </div>
+            <div class="text-[1.5rem] text-gray-600 off">
+                2022-2026
+            </div>
+            
+        </div>
+    </h1>
+  </div>
+  <div class="textdiv hidden absolute right-40 p-2 top-[8rem] w-[60vw] h-[70vh]" id="projectDiv">
+    <p class="text-[3rem] font-bold text-gray-900 off">
+        skills,
+        <span class="text-[1.2rem] block bg-green-700 px-2 border-t-2 border-green-800 w-fit off">html , css , sass , javascript , react , nextjs , python, C / C++, icon designing , Figma , circuit designing and simulation</span>
+    </p>
+    <div class="overflow-y-scroll scrollhide h-[20rem] mt-4">
+    <p class="text-[3rem] font-bold text-gray-900 ml-80 off">
+        My Projects,
+        <span class="text-[1.2rem] block bg-green-700 px-2 border-t-2 border-green-800 w-fit">
+                <a href="https://github.com/vashukashyap/bookApi-CURD-Operation" target="_blank" class="off">Book Api (Curd Operations): </a><br>
+                <a href="https://github.com/vashukashyap/chatapp-BuddyTalk" target="_blank" class="off">Chating app (buddy talk): </a><br>
+                <a href="https://github.com/vashukashyap/chatbot" target="_blank" class="off">Meme generator (Using OpenAi): </a><br>
+                <a href="" target="_blank">Movie searching website:</a><br>
+                <a href="https://github.com/vashukashyap/weatherApp" target="_blank" class="off">Weather Forcast App (using python and rest API):</a><br>
+                <a href="https://github.com/vashukashyap/weatherApp" target="_blank" class="off">Landing Page (for banking, freelancing and nft website):</a><br>
+
+        </span>
+    </p>
+    <p class="text-[2rem] font-bold text-gray-900 ml-80 mt-4 off">
+         my small projects,
+        <span class="text-[1.2rem] block bg-green-700 px-2 border-t-2 border-green-800 w-fit">
+                <a href="https://github.com/vashukashyap/Survey_form" target="_blank" class="off">survey form: </a><br>
+                <a href="https://github.com/vashukashyap/Tribute_page" target="_blank" class="off">tribute page: </a><br>
+                <a href="https://github.com/vashukashyap/tic_tac_toe" target="_blank" class="off">tic-tac-toe: </a><br>
+                <a href="https://github.com/vashukashyap/calculatorApp" target="_blank" class="off">calculator:</a><br>
+        </span>
+    </p>
+</div>
+  </div>
+  <div class="textdiv hidden absolute right-0 p-2 top-40 w-[60vw]" id="contactDiv">
+    <div class="text-xl font-bold text-blue-900 bg-gray-200 px-4 off">
+        Lets, get in contact and work on something big!!!
+    </div>
+    <p class="text-[2rem] font-bold text-gray-900 ml-0 mt-4 off">
+        contact Me
+       <span class="text-[1.2rem] ml-20 block bg-green-700 px-2 border-t-2 border-green-800 w-fit">
+        <a href="https://www.linkedin.com/in/vashu-kashyap-2b1b51284/" target="_blank" class="off">Linkedin: https://www.linkedin.com/in/vashu-kashyap-2b1b51284/</a>
+        </span>
+        <span class="text-[1.2rem] ml-20 block bg-green-700 px-2 border-t-2 border-green-800 w-fit">
+            <a href="https://github.com/vashukashyap" target="_blank" class="off">Github: https://github.com/vashukashyap</a>
+        </span>
+        <span class="text-[1.2rem] ml-20 block bg-green-700 px-2 border-t-2 border-green-800 w-fit">
+            <a href="mailto: kashyapvashu2003@gmail.com" target="_blank" class="off">Email: kashyapvashu2003@gmail.com</a>
+        </span>
+   </p>
+  </div>
+  <div class="textdiv hidden absolute right-0 p-2 top-40 w-[60vw]" id="darkmodeDiv">
+    <h1 class="text-4xl font-bold text-gray-100 off">
+        Dark mode is not available yet!,<br>
+        sorry for inconvenience
+    </h1>
+  </div>  
+  
+
+    
+</body>
+<script src="./index.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script> -->
+</html>

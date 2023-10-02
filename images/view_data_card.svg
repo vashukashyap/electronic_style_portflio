@@ -1,0 +1,31 @@
+<svg width="30" height="40" viewBox="0 0 82 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="2" y="98" width="78" height="9" fill="#EAEE35" stroke="black" stroke-width="2"/>
+<path d="M10 99V106" stroke="black" stroke-width="2"/>
+<path d="M25 99V106" stroke="black" stroke-width="2"/>
+<path d="M40 99V106" stroke="black" stroke-width="2"/>
+<path d="M55 99V106" stroke="black" stroke-width="2"/>
+<path d="M71 99V106" stroke="black" stroke-width="2"/>
+<path d="M1 1H66.4545L81 29H1V1Z" fill="#A19A9A"/>
+<path d="M5.08163 29H81V55H1V41.7451H5.08163V29Z" fill="#A19A9A"/>
+<path d="M1 55H81V59.4526H74.4894V72.8105H81V102H71.2341V96.5579H58.2129V102H20.3701V96.5579H8.16269V102H1V55Z" fill="#A19A9A"/>
+<rect x="12" y="56" width="45" height="33" fill="#FCEA47" stroke="black" stroke-width="2"/>
+<path d="M1.5 1.5V28.5H5.5V41.5V42H1.5V101.5H7.5H8V96H21V101.5H58V96.5H71.5V101.5H80.5V73H74.5V59.5H81V29L66.5 1H1" stroke="black" stroke-width="2"/>
+<path d="M15 57H20L38 88H33.5L23.5 71L15 57Z" fill="#F9EBEB" fill-opacity="0.71"/>
+<path d="M15 57H20L38 88H33.5L23.5 71L15 57Z" fill="#F9EBEB" fill-opacity="0.71"/>
+<path d="M15 57H20L38 88H33.5L23.5 71L15 57Z" fill="#F9EBEB" fill-opacity="0.71"/>
+<path d="M23 57H28L46 88H41.5L31.5 71L23 57Z" fill="#F9EBEB" fill-opacity="0.71"/>
+<path d="M23 57H28L46 88H41.5L31.5 71L23 57Z" fill="#F9EBEB" fill-opacity="0.71"/>
+<path d="M23 57H28L46 88H41.5L31.5 71L23 57Z" fill="#F9EBEB" fill-opacity="0.71"/>
+<rect x="14" y="22" width="4" height="11" rx="2" fill="black"/>
+<rect x="22" y="15" width="4" height="24" rx="2" fill="black"/>
+<rect x="29" y="12" width="4" height="31" rx="2" fill="black"/>
+<rect x="63" y="33" width="4" height="11" rx="2" transform="rotate(180 63 33)" fill="black"/>
+<rect x="56" y="39" width="4" height="24" rx="2" transform="rotate(180 56 39)" fill="black"/>
+<rect x="49" y="43" width="4" height="31" rx="2" transform="rotate(180 49 43)" fill="black"/>
+<rect x="37" y="8" width="4" height="36" rx="2" fill="black"/>
+<rect x="30" y="69" width="9" height="7" fill="#D9D9D9" stroke="black" stroke-width="2"/>
+<rect x="23" y="71" width="7" height="2" rx="1" fill="black"/>
+<rect x="34" y="69" width="7" height="2" rx="1" transform="rotate(-90 34 69)" fill="black"/>
+<rect x="34" y="83" width="7" height="2" rx="1" transform="rotate(-90 34 83)" fill="black"/>
+<rect x="39" y="72" width="7" height="2" rx="1" fill="black"/>
+</svg>
